@@ -40,6 +40,22 @@ python metaforo_watchdog_cn.py https://dao.ckb.community/thread/vot-ckb-integrat
 python metaforo_watchdog_cn.py 12551
 ```
 
+### Docker 使用方法
+
+你也可以使用 Docker 运行工具，无需在本地安装 Python 依赖。
+
+1. **拉取 Docker 镜像：**
+
+   ```bash
+   docker pull ghcr.io/ckbfansdao/ckb-dao-watchdog/dao-v1-0:main
+   ```
+
+2. **运行工具：**
+
+   ```bash
+   docker run -it --rm -v $(pwd)/vote_result:/app/vote_result ghcr.io/ckbfansdao/ckb-dao-watchdog/dao-v1-0:main metaforo_watchdog_cn.py <url_or_id>
+   ```
+
 ## 输出文件
 
 对于每个投票选项，工具会生成：

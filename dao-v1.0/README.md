@@ -40,6 +40,22 @@ If you know the specific option ID:
 python metaforo_watchdog_en.py 12551
 ```
 
+### Docker Usage
+
+You can also run the tool using Docker without installing Python dependencies locally.
+
+1. **Pull the Docker image:**
+
+   ```bash
+   docker pull ghcr.io/ckbfansdao/ckb-dao-watchdog/dao-v1-0:main
+   ```
+
+2. **Run the tool:**
+
+   ```bash
+   docker run -it --rm -v $(pwd)/vote_result:/app/vote_result ghcr.io/ckbfansdao/ckb-dao-watchdog/dao-v1-0:main metaforo_watchdog_en.py <url_or_id>
+   ```
+
 ## Output
 
 For each voting option, the tool generates:
