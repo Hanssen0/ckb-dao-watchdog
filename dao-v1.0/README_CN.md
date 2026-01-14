@@ -45,16 +45,16 @@ python metaforo_watchdog_cn.py 12551
 对于每个投票选项，工具会生成：
 
 ```
-vote_result_{thread_id}_{选项}_{时间戳}.json
-vote_result_{thread_id}_{选项}_{时间戳}.csv
+vote_result/{thread_id}/{选项}_{时间戳}.json
+vote_result/{thread_id}/{选项}_{时间戳}.csv
 ```
 
 示例：
 ```
-vote_result_66568_Yes_20260114220441.json
-vote_result_66568_Yes_20260114220441.csv
-vote_result_66568_No_20260114220441.json
-vote_result_66568_No_20260114220441.csv
+vote_result/66568/Yes_20260114220441.json
+vote_result/66568/Yes_20260114220441.csv
+vote_result/66568/No_20260114220441.json
+vote_result/66568/No_20260114220441.csv
 ```
 
 ## 输出字段说明

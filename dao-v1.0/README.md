@@ -45,16 +45,16 @@ python metaforo_watchdog_en.py 12551
 For each voting option, the tool generates:
 
 ```
-vote_result_{thread_id}_{option}_{timestamp}.json
-vote_result_{thread_id}_{option}_{timestamp}.csv
+vote_result/{thread_id}/{option}_{timestamp}.json
+vote_result/{thread_id}/{option}_{timestamp}.csv
 ```
 
 Example:
 ```
-vote_result_66568_Yes_20260114220441.json
-vote_result_66568_Yes_20260114220441.csv
-vote_result_66568_No_20260114220441.json
-vote_result_66568_No_20260114220441.csv
+vote_result/66568/Yes_20260114220441.json
+vote_result/66568/Yes_20260114220441.csv
+vote_result/66568/No_20260114220441.json
+vote_result/66568/No_20260114220441.csv
 ```
 
 ## Output Fields
