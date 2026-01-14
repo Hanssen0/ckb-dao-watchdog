@@ -439,7 +439,7 @@ def process_option(option_id: int, option_name: str, thread_id: int, timestamp: 
     
     # Save CSV file
     if export_data:
-        fieldnames = ["nickname", "userid", "total weight(metaforo)", "total weight(on chain, floored)", "need_review", "address", "address weight(floored)", "explorer_url"]
+        fieldnames = ["nickname", "userid", "total weight(metaforo)", "total weight(on chain, floored)", "⚠️need_review", "address", "address weight(floored)", "explorer_url"]
         with open(csv_path, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
